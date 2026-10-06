@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="@string/title"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editFirst"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:gravity="center"
+                android:hint="@string/hint_first"
+                android:inputType="numberDecimal|numberSigned"
+                android:minHeight="48dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textOperator"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/op_none"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editSecond"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:gravity="center"
+                android:hint="@string/hint_second"
+                android:inputType="numberDecimal|numberSigned"
+                android:minHeight="48dp"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="@string/result_placeholder"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:text="@string/op_add"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnSubtract"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4dp"
+                android:layout_weight="1"
+                android:text="@string/op_subtract"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnMultiply"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4dp"
+                android:layout_weight="1"
+                android:text="@string/op_multiply"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnDivide"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:text="@string/op_divide"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnClear"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/clear" />
+    </LinearLayout>
+
+</LinearLayout>

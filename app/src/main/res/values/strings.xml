@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Lab05</string>
+    <string name="title">사칙연산 계산기</string>
+    <string name="hint_first">숫자 1</string>
+    <string name="hint_second">숫자 2</string>
+    <string name="op_none">?</string>
+    <string name="op_add">+</string>
+    <string name="op_subtract">-</string>
+    <string name="op_multiply">×</string>
+    <string name="op_divide">÷</string>
+    <string name="clear">초기화</string>
+    <string name="result_placeholder">=</string>
+    <string name="result_format">= %1$s</string>
+    <string name="msg_empty_input">숫자 두 개를 모두 입력하세요</string>
+    <string name="msg_invalid_input">올바른 숫자를 입력하세요</string>
+</resources>
